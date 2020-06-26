@@ -1,0 +1,204 @@
+<!DOCTYPE html> 
+<html lang="ro"> 
+<head> 
+	<meta charset="utf-8">
+	<title> Formular </title>
+	<link rel="stylesheet" type="text/css" href="aptformular.css">
+    <script type = "text/javascript" src="formular.js"></script>
+
+</head>
+
+
+<body>
+<div class="topnav">
+  <a  href="new1.html">Acasa</a>
+  <a href="Desprenoi.html">Despre noi</a>
+  <a class="active" href="Formular.html">Contact</a>
+    <a href="login.html">Logare</a>
+  <div class="search-container">
+  </div>
+</div>
+
+<div class="container">
+ <header class="header">
+<h1 id="title">  Feedback pentru site-ul nostru </h1>
+<p id="description"> Multumim ca ne acorzi din timpul tau pentru a ne imbunatati site-ul! </p>
+</header>
+<form name= "survey-form" id="survey-form" action="http://localhost:7000/cale" method="GET" target="_blank">
+   <div class="form-group">
+  <label id="name-label" for="name"> Nume </label>
+   <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Introdu-ti numele"
+        required
+      />
+       <label id="prenume-label" for="prenume"> Prenume </label>
+       <input
+               type="text"
+               name="prenume"
+               id="prenume"
+               class="form-control"
+               placeholder="Introdu-ti unul dintre prenume"
+               required
+       />
+  <label id="email-label" for="email">E-mail</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Introdu-ti adresa de mail"
+        required
+      />
+       <label id="adresa-label" for="adresa"> Orasul natal </label>
+       <input
+               type="text"
+               name="adresa"
+               id="adresa"
+               class="form-control"
+               placeholder="Introdu-ti orasul natal"
+               required
+       />
+       <label id="telefon-label" for="telefon"> Numar de telefon </label>
+       <input
+               type="text"
+               name="telefon"
+               id="telefon"
+               class="form-control"
+               placeholder="Introdu-ti numarul de telefon"
+               required
+       />
+  <label id="number-label" for="number"
+        >Varsta<span class="clue">(optional)</span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Varsta"
+      />
+  </div>
+   <div class="form-group">
+  <p> Ce rol vi se potriveste? </p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value> Selecteaza rolul </option>
+        <option value="student">Student</option>
+        <option value="job">Casnica</option>
+        <option value="learner">Bucatar profesionist</option>
+        <option value="preferNo">Gatesc la ocazii speciale</option>
+        <option value="other">Altceva</option>
+      </select>
+  </div>
+   <div class="form-group">
+  <p>Ati recomanda site-ul cuiva?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="Desigur"
+          type="radio"
+          class="input-radio"
+          checked
+        />Deigur</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="Poate"
+          type="radio"
+          class="input-radio"
+        />Poate</label
+      >
+
+      <label
+        ><input
+          name="user-recommend"
+          value="Nu sunt sigur/a"
+          type="radio"
+          class="input-radio"
+        />Nu sunt sigur/a</label
+      >
+  </div>
+   <div class="form-group">
+  <p>
+        Ce ar trebui sa imbunatatim?
+        <span class="clue">(Alege tot ce se potriveste)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="Retetele"
+          type="checkbox"
+          class="input-checkbox"
+        />Retetele</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="Modalitatea de contact"
+          type="checkbox"
+          class="input-checkbox"
+        />Modalitatea de contact</label
+      >
+     
+      <label
+        ><input
+          name="prefer"
+          value="Recomandarile"
+          type="checkbox"
+          class="input-checkbox"
+        />Recomandarile</label
+      >
+      
+      <label
+        ><input
+          name="prefer"
+          value="Continutul"
+          type="checkbox"
+          class="input-checkbox"
+        />Continutul</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Videoclipurile"
+          type="checkbox"
+          class="input-checkbox"
+        />Videoclipurile</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Prezentarea"
+          type="checkbox"
+          class="input-checkbox"
+        />Prezentarea</label
+      >
+  </div>
+  
+   <div class="form-group">
+     <p>Alte comentarii sau sugestii?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Introdu-ti comentariul"
+      ></textarea>
+  </div>
+  
+   <div class="form-group">
+  <button type="submit" id="submit" class="submit-button">
+        Inregistreaza
+      </button>
+  </div>
+</form>
+</div>
+<footer id="ft"> </footer>
+</body>
+</html>
